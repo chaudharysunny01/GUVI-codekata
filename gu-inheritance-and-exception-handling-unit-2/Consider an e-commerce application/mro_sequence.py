@@ -37,7 +37,7 @@ class OrganicGrocery(Grocery, Organic):
 def mro_sequence(cls):
     #..... YOUR CODE STARTS HERE .....
     
-    return[c._name_ for c in cls.mro()]
+     return [c.__name__ for c in cls.mro()]
     
     #..... YOUR CODE ENDS HERE .....
 
